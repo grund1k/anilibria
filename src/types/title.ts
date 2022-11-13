@@ -4,7 +4,7 @@ export type Title = {
   names: Name,
   announce: string,
   status: Status,
-  poster: Posters,
+  posters: Posters,
   updated: number,
   last_change: number,
   type: Type,
@@ -17,6 +17,8 @@ export type Title = {
   player: Player,
   torrent: Torrents
 }
+
+export type Titles = Title[];
 
 type Name = {
   ru: string,

@@ -1,4 +1,5 @@
 import browserHistory from '../../browser-history';
+import ChangesList from '../changes-list/changes-list';
 import Header from '../header/header';
 import HistoryRouter from '../history-route/history-route';
 import YouTubeList from '../youtube-list/youtube-list';
@@ -9,6 +10,7 @@ const App = (): JSX.Element => (
     <div className="wrapper">
       <Header />
       <YouTubeList />
+      <ChangesList />
     </div>
   </HistoryRouter>
 );

@@ -7,11 +7,13 @@ export enum AppRoute {
 }
 
 export enum APIRoute {
-  YouTubeVideos = 'getYouTube'
+  YouTubeVideos = '/getYouTube',
+  Changes = '/getChanges'
 }
 
 export enum NameSpace {
   YouTube = 'YouTube',
+  Changes = 'Changes'
 }
 
 export enum FetchStatus {
@@ -21,4 +23,5 @@ export enum FetchStatus {
   Pending = 'pending'
 }
 
-export const YOUTUBE_LINK = 'https://www.youtube.com/watch?v=';
+export const YOUTUBE_LINK = 'https://youtu.be/';
+export const BACKEND_URL = 'https://api.anilibria.tv/v2';

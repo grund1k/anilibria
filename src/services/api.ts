@@ -1,6 +1,5 @@
 import axios, { AxiosError, AxiosInstance} from 'axios';
-
-export const BACKEND_URL = 'https://api.anilibria.tv/v2/';
+import { BACKEND_URL } from '../const';
 const REQUEST_TIMEOUT = 5000;
 
 
