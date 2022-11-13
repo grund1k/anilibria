@@ -8,12 +8,14 @@ export enum AppRoute {
 
 export enum APIRoute {
   YouTubeVideos = '/getYouTube',
-  Changes = '/getChanges'
+  Changes = '/getChanges',
+  Schedule = '/getSchedule',
 }
 
 export enum NameSpace {
   YouTube = 'YouTube',
-  Changes = 'Changes'
+  Changes = 'Changes',
+  Schedule = 'Schedule'
 }
 
 export enum FetchStatus {

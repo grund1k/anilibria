@@ -1,12 +1,12 @@
 import { Title } from '../../types/title';
-import { POSTERS_URL } from './../../const';
-import styles from './changes-item.module.scss';
+import { POSTERS_URL } from '../../const';
+import styles from './poster.module.scss';
 
 type Props = {
   title: Title
 };
 
-const ChangesItem = ({title} : Props): JSX.Element => {
+const Poster = ({title} : Props): JSX.Element => {
   const poster = title.posters.original.url;
 
   return(
@@ -20,4 +20,4 @@ const ChangesItem = ({title} : Props): JSX.Element => {
   );
 };
 
-export default ChangesItem;
+export default Poster;

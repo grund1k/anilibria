@@ -1,4 +1,5 @@
 import {store} from '../store';
+import { Schedule } from './schedule';
 import { Titles } from './title';
 import { YouTubeVideos } from './youtube';
 
@@ -9,6 +10,11 @@ export type YouTubeState = {
 
 export type ChangesState = {
   changes: Titles | [],
+  status: string
+}
+
+export type ScheduleState = {
+  schedule: Schedule | [],
   status: string
 }
 

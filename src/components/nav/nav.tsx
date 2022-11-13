@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { AppRoute } from '../../const';
 import Container from '../container/container';
 import styles from './nav.module.scss';
 
@@ -6,7 +8,7 @@ const Nav = () => {
     {
       id: '0',
       text: 'Главная',
-      href: '#'
+      href: `${AppRoute.Main}`
     },
     {
       id: '1',
@@ -15,8 +17,8 @@ const Nav = () => {
     },
     {
       id: '2',
-      text: 'Расписани',
-      href: '#'
+      text: 'Расписание',
+      href: `${AppRoute.Schedule}`
     },
     {
       id: '3',
@@ -41,7 +43,7 @@ const Nav = () => {
         <ul className={styles.list}>
           {navItems.map((item) => (
             <li className={styles.item} key={item.id}>
-              <a className={styles.link} href={item.href}>{item.text}</a>
+              <Link className={styles.link} to={item.href}>{item.text}</Link>
             </li>
           ))}
         </ul>

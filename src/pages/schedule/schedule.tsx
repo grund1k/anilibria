@@ -1,17 +1,16 @@
 import ChangesList from '../../components/changes-list/changes-list';
+import Container from '../../components/container/container';
 import Header from '../../components/header/header';
+import ScheduleList from '../../components/schedule-list/schedule-list';
 import Wrapper from '../../components/wrapper/wrapper';
-import YouTubeList from '../../components/youtube-list/youtube-list';
-import Container from './../../components/container/container';
-// import styles from './main.module.scss';
 
-const Main = (): JSX.Element => (
+const Schedule = (): JSX.Element => (
   <>
     <Header />
     <Container>
       <Wrapper>
         <>
-          <YouTubeList />
+          <ScheduleList />
           <ChangesList />
         </>
       </Wrapper>
@@ -19,4 +18,4 @@ const Main = (): JSX.Element => (
   </>
 );
 
-export default Main;
+export default Schedule;
