@@ -1,5 +1,9 @@
-import './container.scss';
+import styles from './container.module.scss';
 
-const Container = () => (<div className="container"></div>);
+type Props = {
+  children: JSX.Element
+}
+
+const Container = ({children} : Props): JSX.Element => (<div className={styles.container}>{children}</div>);
 
 export default Container;

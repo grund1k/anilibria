@@ -1,0 +1,19 @@
+@import '../../sass/sass-utils/index.scss';
+
+.aside {
+  padding: size(40px) 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  height: size(400px);
+
+  &:not(:last-child) {
+    margin-bottom: size(20px);
+  }
+}

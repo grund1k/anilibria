@@ -1,9 +1,9 @@
-import './style.scss';
 import { useGetYouTubeVideos } from '../../store/youtube/selector';
 import VideoLink from '../youtube-video/youtube-video';
 import { useAppDispatch } from '../../hooks';
 import { useEffect } from 'react';
 import { fetchYouTubeVideos } from '../../store/api-actions';
+import styles from './youtube-list.module.scss';
 
 const YouTubeList = (): JSX.Element => {
   const videos = useGetYouTubeVideos();
@@ -16,9 +16,9 @@ const YouTubeList = (): JSX.Element => {
   const filteredVideos = videos.filter((item) => item.views && item.comments > 0);
 
   return(
-    <ul className='videos-list'>
+    <ul className={styles.list}>
       {filteredVideos.slice(0, 10).map((item) => (
-        <li className='video-list__item' key={item.id}>
+        <li className={styles.item} key={item.id}>
           <VideoLink video={item} />
         </li>
       ))}

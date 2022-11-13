@@ -2,7 +2,7 @@ export type Title = {
   id: number,
   code: string,
   names: Name,
-  announce: string,
+  announce: string | null,
   status: Status,
   posters: Posters,
   updated: number,

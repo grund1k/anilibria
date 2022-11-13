@@ -3,21 +3,22 @@ import { useAppDispatch } from '../../hooks';
 import { fetchChanges } from '../../store/api-actions';
 import { useGetChanges } from '../../store/changes/selector';
 import ChangesItem from '../changes-item/changes-item';
+import styles from './changes-list.module.scss';
 
 const ChangesList = (): JSX.Element => {
   const dispatch = useAppDispatch();
 
   useEffect(()=> {
-    dispatch(fetchChanges(10));
+    dispatch(fetchChanges(5));
   }, [dispatch]);
 
   const changes = useGetChanges();
 
   return(
-    <aside>
-      <ul>
+    <aside className={styles.aside}>
+      <ul className={styles.list}>
         {changes.map((item) => (
-          <li key={item.id}>
+          <li className={styles.item} key={item.id}>
             <ChangesItem title={item} />
           </li>
         ))}

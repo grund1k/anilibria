@@ -1,0 +1,7 @@
+@import '../../sass/sass-utils/index.scss';
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 80% 1fr;
+  gap: size(20px);
+}

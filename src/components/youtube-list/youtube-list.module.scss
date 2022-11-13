@@ -1,0 +1,18 @@
+@import '../../sass/sass-utils/index.scss';
+
+.list {
+  width: 100%;
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: size(20px);
+  align-content: flex-start;
+  margin: 0;
+  padding: size(40px) 0;
+}
+
+.item {
+  width: 100%;
+  height: size(400px);
+}

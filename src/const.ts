@@ -25,3 +25,4 @@ export enum FetchStatus {
 
 export const YOUTUBE_LINK = 'https://youtu.be/';
 export const BACKEND_URL = 'https://api.anilibria.tv/v2';
+export const POSTERS_URL = 'https://static-libria.weekstorm.one';

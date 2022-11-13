@@ -1,3 +1,6 @@
+import Container from '../container/container';
+import styles from './nav.module.scss';
+
 const Nav = () => {
   const navItems = [
     {
@@ -33,14 +36,16 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="nav">
-      <ul className="nav__list">
-        {navItems.map((item) => (
-          <li className="nav__item" key={item.id}>
-            <a className="nav__link" href={item.href}>{item.text}</a>
-          </li>
-        ))}
-      </ul>
+    <nav className={styles.nav}>
+      <Container>
+        <ul className={styles.list}>
+          {navItems.map((item) => (
+            <li className={styles.item} key={item.id}>
+              <a className={styles.link} href={item.href}>{item.text}</a>
+            </li>
+          ))}
+        </ul>
+      </Container>
     </nav>
   );
 };

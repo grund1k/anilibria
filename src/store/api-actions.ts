@@ -24,7 +24,7 @@ export const fetchChanges = createAsyncThunk<Titles, number, {
 }>(
   'mainData/changes',
   async (limit, {dispatch, extra: api}) => {
-    const {data} = await api.get<Titles>(`${APIRoute.Changes}?limit=${limit}&include=raw_poster`);
+    const {data} = await api.get<Titles>(`${APIRoute.Changes}?limit=${limit}`);
     return data;
   }
 );

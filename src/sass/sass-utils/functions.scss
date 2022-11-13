@@ -1,3 +1,12 @@
+@function size($size-in-px) {
+  @return calc($size-in-px / $fz-default * 1rem);
+}
+
+@function size-html($vp: $vp-1440, $k: 1) {
+  @return calc($fz-default / $vp * 100vw * $k);
+}
+
+
 // ---------------------------------
 // ❗ использование скейлинга должно быть согласовано с командой и заказчиком
 
@@ -8,9 +17,9 @@
 //   @return calc($size-in-px / $fz-default * 1rem);
 // }
 
-// @function size-desktop($size-in-px) {
-//   @return calc($size-in-px / $vp-1920 * 100vw);
-// }
+@function size-desktop($size-in-px) {
+  @return calc($size-in-px / $vp-1920 * 100vw);
+}
 
 // reboot.scss
 // html {
